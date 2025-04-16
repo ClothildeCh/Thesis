@@ -38,7 +38,12 @@ special_tokens_map.json
 ### 3. ACOSQE !
 
 Run inference with src/inference.py
-
+```
+python src/inference.py \
+  --input_csv data/test_reviews.csv \
+  --output_csv outputs/v4.1_predictions.csv \
+  --model_path models/v4.1
+```
 
 ### 4. Evaluation
 
