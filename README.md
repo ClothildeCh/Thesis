@@ -18,29 +18,45 @@ I fine-tuned T5-based models using a manually annotated dataset of over 1000 rev
 
 ```bash
 pip install -r requirements.txt
-
+```
 ### 2. Load best model
 
-best_model_v4;zip
+Download the Trained Model (v4.1)
+The final trained model (version v4.1) is available via Google Drive:
+https://drive.google.com/drive/folders/130fC0cXzwM9jx29oo8vzYbfF1Mr2BrjU?usp=sharing
+
+After downloading:
+Unzip the folder
+Place the contents inside your local models/v4.1/ directory
+
+Ensure the folder contains:
+spiece.model
+config.json
+tokenizer_config.json
+special_tokens_map.json
 
 ### 3. ACOSQE !
 
+Run inference with src/inference.py
+
+
 ### 4. Evaluation
+
 Model performance is tracked on a fixed 5-review gold test set using:
 Exact Match
 Quad-level Precision, Recall, F1
 Hallucination Rate
 Under-generation Analysis
-Visual outputs include attention heatmaps and Power BI charts showing extracted aspect distributions.
+Visual outputs include attention heatmaps and Power BI (hosted on NEST SharePoint - restricted) charts showing extracted aspect distributions.
 
 
-Data Disclaimer
+### Data Disclaimer
 The full Trustpilot dataset used for training is not included due to data use limitations.
 
 
 
-Author
+### Author
 Clothilde Charles
 MSc Data Science – City, University of London
-Supervised by: 
+Supervised by: PRANAVA MADHYASTHA
 In collaboration with: National Employment Savings Trust (NEST)
